@@ -381,6 +381,10 @@ export interface Tdoc<docType = document['TYPE_CONTEST'] | document['TYPE_TRAINI
     penaltySince?: Date;
     penaltyRules?: PenaltyRules;
 
+    // For Fun Contest
+    singleRatio: number;
+    lowestRatio: number;
+
     // For training
     description?: string;
     dag?: TrainingNode[];
