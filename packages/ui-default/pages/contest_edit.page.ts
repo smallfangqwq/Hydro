@@ -32,7 +32,7 @@ const page = new NamedPage(['contest_edit', 'contest_create', 'homework_create',
   }).trigger('change');
   if (pagename.endsWith('edit')) {
     let confirmed = false;
-    $(document).on('click', '[name="operation"]', (ev) => {
+    $(document).on('click', '[name="delete"]', (ev) => {
       ev.preventDefault();
       if (confirmed) {
         return request.post('', { operation: 'delete' }).then((res) => {
